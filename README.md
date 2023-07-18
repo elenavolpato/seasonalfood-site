@@ -1,0 +1,1 @@
+Email icon by Tamzid Hasan from Noun Project
