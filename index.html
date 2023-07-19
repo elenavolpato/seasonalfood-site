@@ -19,13 +19,20 @@
 
 <body class="bg-purple-900 font-sans m-0 flex flex-col">
 
-  <header class="bg-purple-800 z-20 sticky top-0 flex justify-center w-screen p-4 text-white">
-    <!-- <div class="hamburger" hidden>
-          <p>about the project</p>
-          <p>contribute</p>
-          <p>Buy us a coffee</p>
-        </div> -->
+  <header class="bg-purple-800 z-20 sticky top-0 flex justify-center items-center w-screen p-4 text-white">
     <h3 class="font-display text-2xl md:text-4xl">Seasonal Food App</h3>
+    <input type="checkbox" id="overlay-input" class="absolute right-0 sm:-right-4"/>
+       <label for="overlay-input" id="overlay-button"><span></span></label>
+    <div id="overlay">
+      <ul>
+        <li><a href="#">about the project</a></li>
+        <li><a href="#">contribute</a></li>
+        <li><a href="#">Buy us a coffee</a></li>
+        <li><a href="#">Whe are we?</a></li>
+      </ul>
+    </div>
+    
+
   </header>
 
   <main class="mt-4 w-full md:flex md:items-center md:justify-center md:gap-8">
@@ -85,17 +92,16 @@
     <div class="py-5 md:basis-1/2 md:pr-36">
       <div class="flex justify-center gap-2 items-center">
         <img src="./assets/github-mark-white.svg" class="w-6" />
-        <h3 class=" font-display">contribute 
-          <span class="font-sans">on our 
-            <a class="text-white"
-              href="">github</a>
-            </span>
-          </h3>
-        </div>
+        <h3 class=" font-display">contribute
+          <span class="font-sans">on our
+            <a class="text-white" href="">github</a>
+          </span>
+        </h3>
+      </div>
       <!-- <h3 class="text-xl font-display">buy us a coffee </h3> -->
       <div class="flex justify-center gap-2 items-center mt-2">
-        <img src="./assets/noun-email-4218876.svg" class="w-6"/>
-        <h3 class="font-display">contact us: 
+        <img src="./assets/noun-email-4218876.svg" class="w-6" />
+        <h3 class="font-display">contact us:
           <span class="font-sans">fuzue@fuzue.tech </span>
         </h3>
 
@@ -110,3 +116,31 @@
 </body>
 
 </html>
+
+<!--  <button class="bg-transparent border-none right-4 relative group">
+          <div
+            class="relative flex overflow-hidden items-center justify-center rounded-full w-[50px] h-[50px] transform transition-all bg-transparent duration-200 ">
+            <div
+              class="flex flex-col justify-between w-[20px] h-[20px] transform transition-all duration-300 origin-center overflow-hidden">
+              <div
+                class="bg-white h-[2px] w-7 transform transition-all duration-300 origin-left group-focus:translate-x-10">
+              </div>
+              <div
+                class="bg-white h-[2px] w-7 rounded transform transition-all duration-300 group-focus:translate-x-10 delay-75">
+              </div>
+              <div
+                class="bg-white h-[2px] w-7 transform transition-all duration-300 origin-left group-focus:translate-x-10 delay-150">
+              </div>
+  
+              <div
+                class="absolute items-center justify-between transform transition-all duration-500 top-2.5 -translate-x-10 group-focus:translate-x-0 flex w-0 group-focus:w-12">
+                <div
+                  class="absolute bg-white h-[2px] w-5 transform transition-all duration-500 rotate-0 delay-300 group-focus:rotate-45">
+                </div>
+                <div
+                  class="absolute bg-white h-[2px] w-5 transform transition-all duration-500 -rotate-0 delay-300 group-focus:-rotate-45">
+                </div>
+              </div>
+            </div>
+          </div>
+        </button> -->
