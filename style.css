@@ -98,7 +98,8 @@ button:focus-visible {
   }
 }
 
-/* menu hamburger CSS */
+/* CSS  for hamburguer menu */
+
 @keyframes bugfix {
   from {
     padding: 0;
