@@ -1,2 +1,6 @@
-Email icon by Tamzid Hasan from Noun Project
-Menu icon by andika from Noun Project 
+Email icon by Tamzid Hasan from Noun Project (CC BY 3.0)
+Menu icon by andika from Noun Project (CC BY 3.0)
+Head Brain by Royyan Wijaya from [Noun Project](https://thenounproject.com/browse/icons/term/head-brain/)
+(CC BY 3.0)
+Search by Royyan Wijaya from [Noun Project](https://thenounproject.com/browse/icons/term/search/)(CC BY 3.0)
+month by Deemak Daksina from [Noun Project](https://thenounproject.com/browse/icons/term/month/)(CC BY 3.0)

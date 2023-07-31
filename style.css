@@ -170,7 +170,7 @@ input[type=checkbox]:checked ~ #overlay-button span:after {
 }
 #overlay {
   width: 100vw;
-  background: #8e0f93;
+  background: #5a175d;
   top: 0;
   visibility: hidden;
   position: fixed;

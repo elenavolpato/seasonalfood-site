@@ -17,9 +17,17 @@
   <title>Seasonal Food App</title>
 </head>
 
-<body class="bg-[#F2EDD7] font-sans m-0 flex flex-col text-[#393232]">
-
-  <header class="bg-[#3A6351] z-20 sticky top-0 flex justify-center items-center w-screen p-4 text-white">
+<body class="bg-[#f3ecf1] font-sans m-0 flex flex-col text-[#393232]">
+<!--    primary: { 
+      main: "#5a175d", //purple
+      light: "#f3ecf1", //cream - bg-color
+      dark: "#67074a", // purple/red
+    },
+    secondary: {
+      main: "#05878a", //blue-green light
+      light: "#074d6790", // blue-green transparent
+    }, -->
+  <header class="bg-[#5a175d] z-20 sticky top-0 flex justify-center items-center w-screen p-4 text-white">
     <h3 class="font-display text-2xl md:text-4xl">Seasonal Food App</h3>
     <!-- HAMBURGER MENU-->
     <input type="checkbox" id="overlay-input" class="absolute right-0 sm:-right-4"/>
@@ -27,16 +35,16 @@
     <div id="overlay">
       <h3 class="font-display text-2xl md:text-4xl text-center my-5">Seasonal Food App</h3>
       <ul>
-        <li class="md:hidden"><a href="#about-the-project">about the project</a></li>
+        <li class="md:hidden"><a href="#about-the-project">the idea</a></li>
         <li><a href="https://github.com/fuzue/seasonfood" target="_blank">contribute</a></li>
         <!-- <li><a href="#">Buy us a coffee</a></li> -->
-        <li><a href="https://elenavolpato.me" target="_blank">about us</a></li>
+        <li><a href="https://fuzue.tech" target="_blank">about us</a></li>
       </ul>
     </div>
   </header>
   <!-- MAIN SECTION OF THE WEBSITE -->
   <main class="mt-4 w-full flex flex-col md:flex-row items-center justify-center md:gap-8">
-    <div class=" py-20 text-[#3A6351] h-full md:order-2 text-center md:text-left">
+    <div class=" py-20 text-[#074e67] h-full md:order-2 text-center md:text-left">
       <div>
         <p class="mx-7 text-4xl md:text-6xl ">Find out when <br>
           it's best to buy <br>
@@ -57,52 +65,52 @@
     </div>
   </main>
   <!-- FEATURES -->
-  <div class=" md:flex gap-6 md:gap-24 w-full bg-[#E48257] text-[#393232] text-center px-6 -mt-3  xl:px-56 py-5 pt-6 pb-8 ">
+  <div class=" md:flex gap-6 md:gap-24 w-full bg-[#05878a] text-slate-50 text-center px-6 -mt-3  xl:px-56 py-5 pt-6 pb-8 ">
     <div class="flex flex-col items-center xl:ml-36">
-      <img src="./assets/noun-rhino.svg" class="w-12" />
+      <img src="./assets/icon-month.svg" class="w-10 mt-2 mb-1" />
       <h3 class="text-xl font-display">Monthly view</h3>
       <article class="">
-        An easy to use app to check the seasonality of fruits and vegetables. You can check it on the way to he supermarket or when making your shopping list.
+        An easy to use app to check the seasonality of fruits and vegetables. You can check it on the way to he supermarket or when making your shopping list
       </article>
     </div>
     <div class="flex flex-col items-center pt-6 md:pt-0 ">
-      <img src="./assets/noun-rhino.svg" class="w-12" />
+      <img src="./assets/icon-search.svg" class="w-9 my-1" />
       <h3 class="text-xl font-display">Search for an specific fruit</h3>
       <article class="">
         Discover if that fruit or veggie is in season this month by using the search bar, and if it isn't, you will se when it's best to buy it
       </article>
   </div>
   <div class="flex flex-col items-center pt-6 md:pt-0 xl:mr-36">
-    <img src="./assets/noun-rhino.svg" class="w-12" />
-    <h3 id="about-the-project" class="text-xl font-display">about the project </h3>
-    <article >
-      The idea came from a genuine need we had when we moved to another country. We didn't know what we would find in the supermarket.
+    <img src="./assets/icon-head-brain.svg" class="w-10 my-1" />
+    <h3 id="about-the-project" class="text-xl font-display">The idea </h3>
+    <article>
+      The idea came from a genuine need we had when we moved to another country. We didn't know what we would find in the supermarket, or when to find specific fruits or vegetables. And after not finding any apps that we enjoyed using, we decided to build one :)
     </article>
   </div>
 </div>
   <!-- ABOUT US AND CONTACT -->
   <div
-    class="text-center w-full bg-[#3A6351] text-slate-50 gap-6px-6  py-6">
+    class="text-center w-full bg-[#dd9933] text-slate-950 gap-6 px-6 py-2">
     
     <div class="py-5">
       <div class="flex justify-center gap-2 items-center">
         <img src="./assets/github-mark-white.svg" class="w-6" />
-        <h3 class=" font-display">contribute
+        <h3 class=" font-display">contribute&nbsp;
           <span class="font-sans">on our
-            <a class="text-slate-50" href="">github</a>
+            <a class="text-slate-950" href="">github</a>
           </span>
         </h3>
       </div>
       <!-- <h3 class="text-xl font-display">buy us a coffee </h3> -->
       <div class="flex justify-center gap-2 items-center mt-2">
-        <img src="./assets/noun-email-4218876.svg" class="w-6" />
-        <h3 class="font-display">contact us:
-          <span class="font-sans text-slate-50">fuzue@fuzue.tech </span>
+        <img src="./assets/icon-email.svg" class="w-6" />
+        <h3 class="font-display">contact us:&nbsp; 
+          <span class="font-sans text-slate-950">fuzue@fuzue.tech </span>
         </h3>
 
       </div>
     </div>
-    <footer class=" text-sm text-center  w-full">made by <a class="text-slate-50" ref="#">fuzue.tech </a></footer>
+    <footer class=" text-sm text-center w-full pb-2">made by <a class="text-slate-950" ref="#">fuzue.tech </a></footer>
   </div>
    <script type="module" src="/main.js"></script>
 </body>
