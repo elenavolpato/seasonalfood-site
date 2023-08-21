@@ -11,11 +11,6 @@ export default {
       'mono': ['ui-monospace', 'SFMono-Regular', ],
       'display': ['Alegreya Sans SC', 'sans-serif'],
     },
-    extend: {
-      /* backgroundImage:{
-        'fair': "url('/assets/assorted-mixed-fruits.jpg')"
-      } */
-    },
   },
  
   plugins: [],
