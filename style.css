@@ -204,7 +204,7 @@ input[type=checkbox]:checked ~ #overlay-button span:after {
 /* PHONE CSS */
 .phone {
   /* position: relative; */
-  height: 80%;
+  height: 90%;
   aspect-ratio: calc(360/780);
   background-color: #7371ee;
   background-image: linear-gradient(60deg, #7371ee 1%, #a1d9d6 100%);
