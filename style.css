@@ -134,7 +134,7 @@ button:focus-visible {
   height: 4px;
   width: 35px;
   border-radius: 2px;
-  background-color: white;
+  background-color: #ffefc0;
   position: relative;
   display: block;
   transition: all 0.2s ease-in-out;
@@ -150,13 +150,13 @@ button:focus-visible {
   height: 4px;
   width: 35px;
   border-radius: 2px;
-  background-color: white;
+  background-color: #ffefc0;
   position: absolute;
   content: "";
   transition: all 0.2s ease-in-out;
 }
 #overlay-button:hover span, #overlay-button:hover span:before, #overlay-button:hover span:after {
-  background: white;
+  background: #ffefc0;
 }
 input[type=checkbox] {
   display: none;
@@ -176,7 +176,7 @@ input[type=checkbox]:checked ~ #overlay-button span:after {
 }
 #overlay {
   width: 100vw;
-  background: #5a175d;
+  background: #782a33;
   max-height: 0;
   overflow: hidden;
   transition: all ease-in-out .5s;
@@ -197,7 +197,7 @@ input[type=checkbox]:checked ~ #overlay-button span:after {
   padding: 1em;
 }
 #overlay ul li a {
-  color: white;
+  color: #ffefc0;
   text-decoration: none;
 }
 
