@@ -134,7 +134,7 @@ button:focus-visible {
   height: 4px;
   width: 35px;
   border-radius: 2px;
-  background-color: #ffefc0;
+  background-color: #f9f3e3;
   position: relative;
   display: block;
   transition: all 0.2s ease-in-out;
@@ -150,7 +150,7 @@ button:focus-visible {
   height: 4px;
   width: 35px;
   border-radius: 2px;
-  background-color: #ffefc0;
+  background-color: #f9f3e3;
   position: absolute;
   content: "";
   transition: all 0.2s ease-in-out;
@@ -176,7 +176,7 @@ input[type=checkbox]:checked ~ #overlay-button span:after {
 }
 #overlay {
   width: 100vw;
-  background: #782a33;
+  background: #ce3045;
   max-height: 0;
   overflow: hidden;
   transition: all ease-in-out .5s;
@@ -197,7 +197,8 @@ input[type=checkbox]:checked ~ #overlay-button span:after {
   padding: 1em;
 }
 #overlay ul li a {
-  color: #ffefc0;
+  color: #f9f3e3;
+;
   text-decoration: none;
 }
 
