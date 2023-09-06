@@ -198,7 +198,6 @@ input[type=checkbox]:checked ~ #overlay-button span:after {
 }
 #overlay ul li a {
   color: #f9f3e3;
-;
   text-decoration: none;
 }
 
