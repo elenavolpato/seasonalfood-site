@@ -205,6 +205,39 @@ input[type="checkbox"]:checked ~ #overlay-button span:after {
 }
 
 /* PHONE CSS */
+
+.phone-container {
+  position: relative;
+  transform: perspective(1000px) rotateY(-5deg);
+  animation: floatPhone 6s ease-in-out infinite;
+}
+
+@keyframes floatPhone {
+  0%,
+  100% {
+    transform: perspective(1000px) rotateY(-5deg) translateY(0px);
+  }
+  50% {
+    transform: perspective(1000px) rotateY(-5deg) translateY(-10px);
+  }
+}
+
+.phone-container {
+  position: relative;
+  transform: perspective(1000px) rotateY(5deg);
+  animation: floatPhone 10s ease-in-out infinite;
+}
+
+@keyframes floatPhone {
+  0%,
+  100% {
+    transform: perspective(1000px) rotateY(5deg) translateY(0px);
+  }
+  50% {
+    transform: perspective(1000px) rotateY(5deg) translateY(-10px);
+  }
+}
+
 .phone {
   /* position: relative; */
   height: 90%;
@@ -257,4 +290,28 @@ input[type="checkbox"]:checked ~ #overlay-button span:after {
   display: block;
   border-radius: 999px;
   box-shadow: inset 0px -2px 2px rgba(0, 0, 0, 0.5);
+}
+
+.image-container {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  overflow: hidden;
+}
+
+.image-slide {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  transition: opacity 1s ease-in-out;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.image-slide.active {
+  opacity: 1;
 }
