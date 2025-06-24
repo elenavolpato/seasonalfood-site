@@ -1,5 +1,3 @@
-
-
 :root {
   font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
   line-height: 1.5;
@@ -16,7 +14,8 @@
   -webkit-text-size-adjust: 100%;
 }
 
-html, body {
+html,
+body {
   width: 100%;
   height: 100%;
   overflow-x: hidden;
@@ -109,18 +108,18 @@ button:focus-visible {
 @keyframes bugfix {
   from {
     padding: 0;
- }
+  }
   to {
     padding: 0;
- }
+  }
 }
 @-webkit-keyframes bugfix {
   from {
     padding: 0;
- }
+  }
   to {
     padding: 0;
- }
+  }
 }
 #overlay-button {
   position: absolute;
@@ -146,7 +145,8 @@ button:focus-visible {
 #overlay-button span:after {
   top: 10px;
 }
-#overlay-button span:before, #overlay-button span:after {
+#overlay-button span:before,
+#overlay-button span:after {
   height: 4px;
   width: 35px;
   border-radius: 2px;
@@ -155,23 +155,26 @@ button:focus-visible {
   content: "";
   transition: all 0.2s ease-in-out;
 }
-#overlay-button:hover span, #overlay-button:hover span:before, #overlay-button:hover span:after {
+#overlay-button:hover span,
+#overlay-button:hover span:before,
+#overlay-button:hover span:after {
   background: #ffefc0;
 }
-input[type=checkbox] {
+input[type="checkbox"] {
   display: none;
 }
-input[type=checkbox]:checked ~ #overlay {
+input[type="checkbox"]:checked ~ #overlay {
   max-height: 100vh;
 }
-input[type=checkbox]:checked ~ #overlay-button:hover span, input[type=checkbox]:checked ~ #overlay-button span {
+input[type="checkbox"]:checked ~ #overlay-button:hover span,
+input[type="checkbox"]:checked ~ #overlay-button span {
   background: transparent;
 }
-input[type=checkbox]:checked ~ #overlay-button span:before {
+input[type="checkbox"]:checked ~ #overlay-button span:before {
   transform: rotate(45deg) translate(7px, 7px);
   opacity: 1;
 }
-input[type=checkbox]:checked ~ #overlay-button span:after {
+input[type="checkbox"]:checked ~ #overlay-button span:after {
   transform: rotate(-45deg) translate(7px, -7px);
 }
 #overlay {
@@ -179,7 +182,7 @@ input[type=checkbox]:checked ~ #overlay-button span:after {
   background: #ce3045;
   max-height: 0;
   overflow: hidden;
-  transition: all ease-in-out .5s;
+  transition: all ease-in-out 0.5s;
   position: absolute;
   margin-top: 64px;
 }
@@ -202,14 +205,47 @@ input[type=checkbox]:checked ~ #overlay-button span:after {
 }
 
 /* PHONE CSS */
+
+.phone-container {
+  position: relative;
+  transform: perspective(1000px) rotateY(-5deg);
+  animation: floatPhone 6s ease-in-out infinite;
+}
+
+@keyframes floatPhone {
+  0%,
+  100% {
+    transform: perspective(1000px) rotateY(-5deg) translateY(0px);
+  }
+  50% {
+    transform: perspective(1000px) rotateY(-5deg) translateY(-10px);
+  }
+}
+
+.phone-container {
+  position: relative;
+  transform: perspective(1000px) rotateY(5deg);
+  animation: floatPhone 10s ease-in-out infinite;
+}
+
+@keyframes floatPhone {
+  0%,
+  100% {
+    transform: perspective(1000px) rotateY(5deg) translateY(0px);
+  }
+  50% {
+    transform: perspective(1000px) rotateY(5deg) translateY(-10px);
+  }
+}
+
 .phone {
   /* position: relative; */
   height: 90%;
-  aspect-ratio: calc(360/780);
+  aspect-ratio: calc(360 / 780);
   background-color: #7371ee;
   background-image: linear-gradient(60deg, #7371ee 1%, #a1d9d6 100%);
-  border-radius: .5em;
-  box-shadow: 0px 0px 0px .5vh #1f1f1f, 0px 0px 0px .5vh #191919,
+  border-radius: 0.5em;
+  box-shadow: 0px 0px 0px 0.5vh #1f1f1f, 0px 0px 0px 0.5vh #191919,
     0px 0px 0px max(1vh, 5px) #111;
   display: flex;
   flex-direction: column;
@@ -232,15 +268,15 @@ input[type=checkbox]:checked ~ #overlay-button span:after {
   position: absolute;
   display: block;
   color: transparent;
-  z-index: 100;
+  z-index: 49;
 }
 .phone b {
   top: 2%;
   display: flex;
   align-items: center;
   justify-content: center;
-  width: .75vh;
-  height: .75vh;
+  width: 0.75vh;
+  height: 0.75vh;
   background-color: #101010;
   border-radius: 999px;
   box-shadow: inset 0px -3px 2px 0px rgba(255, 255, 255, 0.2);
@@ -254,4 +290,28 @@ input[type=checkbox]:checked ~ #overlay-button span:after {
   display: block;
   border-radius: 999px;
   box-shadow: inset 0px -2px 2px rgba(0, 0, 0, 0.5);
+}
+
+.image-container {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  overflow: hidden;
+}
+
+.image-slide {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  transition: opacity 1s ease-in-out;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.image-slide.active {
+  opacity: 1;
 }
