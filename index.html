@@ -283,9 +283,12 @@
         const modal = document.getElementById("privacyModal");
 
         // Function to update current URL display
-        function updateCurrentUrl() {
+        /* function updateCurrentUrl() {
           document.getElementById("currentUrl").textContent = window.location.href;
         }
+        document.addEventListener("DOMContentLoaded", () => {
+          updateCurrentUrl();
+        }); */
 
         // Function to open privacy policy modal
         function openModal() {
